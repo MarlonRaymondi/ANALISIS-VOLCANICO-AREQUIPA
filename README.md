@@ -43,5 +43,6 @@ volc_areq<-volcan %>%
   filter(DEPARTAMEN =="AREQUIPA")
 	
 ## Visualización de los volcanes de Arequipa 
-!(	
+!(IMAGEN1.png)
+
 

@@ -74,13 +74,19 @@ mapview(dist_areq , zcol = "DISTRITO" ,
 
 ## Visualización  por  latitud de los volcanes de Arequipa
 ~~~
-tm_shape(volc_areq)+
+tm_shape(dist_areq) + tm_symbols()+ tm_layout(frame=T)
 
-  tm_bubbles(col = "LATITUD", size = 0.5)+
+tm_shape(dist_areq) + 
+
+  tm_polygons(col = "DISTRITO") +
   
-  tm_layout(title = "Latitud de los volcanes de Arequipa",legend.position = c(0.01,0.08),title.position = c(0.01,0.05))
+  tm_shape(volc_areq)+
+  
+  tm_bubbles(col = "ALTITUD", size = 0.5)+
+  
+  tm_layout(frame = T) 
  ~~~ 
-  ![altitud](https://user-images.githubusercontent.com/78512276/106985801-b43db980-672f-11eb-92d5-271e0c8f7f23.png)
+  ![altitud]
   
 ## Relación entre dos variables
 ~~~

@@ -16,7 +16,7 @@ ALUMNOS:
 | LUIS ANTONIO, TREJO PORTILLA            |  19160163  |
 
 
-# DETERMINACIÓN DE LA ACTIVIDAD VOLCÁNICA EN EL DEPARTAMENTO DE AREQUIPA
+# ANÁLISIS DE LA ACTIVIDAD VOLCÁNICA EN EL DEPARTAMENTO DE AREQUIPA
 
 ## Extraemos la data
 (https://www.geogpsperu.com/2018/05/volcanes-activos-e-inactivos-ingemmet.html "Volcanes Activos e Inactivos INGEMMET - GEOCATMIN | SHP + KMZ")

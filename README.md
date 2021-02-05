@@ -2,7 +2,6 @@
 PROFESOR: ROY YALI SAMANIEGO
 
 GRUPO:8
-ALUMNOS.
 
 |             INTEGRANTES                 |   CÓDIGO   |
 |:----------------------------------------|-----------:|
@@ -53,4 +52,4 @@ mapview(st_geometry(volc_areq))
 tm_shape(volc_areq)+
   tm_bubbles(col = "LATITUD", size = 0.5)+
   tm_layout(title = "Latitud de los volcanes de Arequipa",legend.position = c(0.01,0.08),title.position = c(0.01,0.05))
-  
+  ![altitud](https://user-images.githubusercontent.com/78512276/106985801-b43db980-672f-11eb-92d5-271e0c8f7f23.png)

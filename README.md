@@ -21,6 +21,8 @@ ALUMNOS:
 ## Extraemos la data
 (https://www.geogpsperu.com/2018/05/volcanes-activos-e-inactivos-ingemmet.html "Volcanes Activos e Inactivos INGEMMET - GEOCATMIN | SHP + KMZ")
 
+(https://www.geogpsperu.com/2018/02/limite-distrital-politico-shapefile-ign.html "Limite Distrital- Político)
+
 ## Cargando librerías
 ~~~
 library(sf)
@@ -37,24 +39,38 @@ library(tmap)
 ~~~
 
 ## Cargando la data 
+~~~â
 st_read("OTROS VOLCANES INGEMMET GEOCATMIN GEOGPSPERU.shp")
 
 volcan <- st_read("OTROS VOLCANES INGEMMET GEOCATMIN GEOGPSPERU.shp")
+
+dist <- st_read("DISTRITOS.shp")
+~~~
 
 ## Filtrando datos solo del departamento de Arequipa
 ~~~
 volc_areq<-volcan %>%
 
   filter(DEPARTAMEN =="AREQUIPA")
+  
+
+dist_areq <- dist %>%
+
+  filter(DEPARTAMEN == "AREQUIPA")
 ~~~
 
 ## Visualización de los volcanes de Arequipa 
 Para esto utilizaremos la librería Mapview:
 ~~~
-mapview(st_geometry(volc_areq))
+mapview(dist_areq , zcol = "DISTRITO" , 
+
+        layer.name = "DISTRITOS DE AREQUIPA") + 
+	
+  mapview(st_geometry(volc_areq))
+
 ~~~
 
-![Volcanes de Arequipa](https://user-images.githubusercontent.com/78512276/106982945-ab96b480-672a-11eb-99ee-04ae5d2ae356.png)
+![Volcanes de Arequipa]()
 
 ## Visualización  por  latitud de los volcanes de Arequipa
 ~~~

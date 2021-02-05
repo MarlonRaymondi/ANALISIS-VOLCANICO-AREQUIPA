@@ -49,3 +49,8 @@ mapview(st_geometry(volc_areq))
 
 ![Volcanes de Arequipa](https://user-images.githubusercontent.com/78512276/106982945-ab96b480-672a-11eb-99ee-04ae5d2ae356.png)
 
+## Visualización  por  latitud de los volcanes de Arequipa
+tm_shape(volc_areq)+
+  tm_bubbles(col = "LATITUD", size = 0.5)+
+  tm_layout(title = "Latitud de los volcanes de Arequipa",legend.position = c(0.01,0.08),title.position = c(0.01,0.05))
+  

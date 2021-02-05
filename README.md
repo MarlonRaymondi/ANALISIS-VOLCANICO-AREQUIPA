@@ -60,3 +60,11 @@ tm_shape(volc_areq)+
   tm_layout(title = "Latitud de los volcanes de Arequipa",legend.position = c(0.01,0.08),title.position = c(0.01,0.05))
   
   ![altitud](https://user-images.githubusercontent.com/78512276/106985801-b43db980-672f-11eb-92d5-271e0c8f7f23.png)
+## Relación entre dos variables
+gplot(volc_areq, mapping = aes(x= ELEVACION, y= VOLUMEN, 
+                                color = CATEGORIA)) + geom_point() + 
+  geom_smooth(method = 'lm') +
+  ggtitle("RELACION ENTRE VOLUMEN Y ELEVACION DE LOS VOLCANES DE AREQUIPA") +
+  theme(plot.title = element_text(hjust = 0.5))
+  
+  ![IMAGEN3](https://user-images.githubusercontent.com/78512276/106986886-f10ab000-6731-11eb-91af-97b42821e065.png)

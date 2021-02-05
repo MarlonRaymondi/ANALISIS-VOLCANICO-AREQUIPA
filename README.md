@@ -44,3 +44,4 @@ volc_areq<-volcan %>%
 	
 ## Visualización de los volcanes de Arequipa 
 !(https://github.com/MarlonRaymondi/GRUPO8-TRABAJO-FINAL/blob/main/IMAGEN1.png)
+![Volcanes de Arequipa](https://user-images.githubusercontent.com/78512276/106982945-ab96b480-672a-11eb-99ee-04ae5d2ae356.png)

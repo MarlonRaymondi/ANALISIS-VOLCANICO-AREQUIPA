@@ -51,10 +51,12 @@ volc_areq<-volcan %>%
 Para esto utilizaremos la librería Mapview:
 ~~~
 mapview(st_geometry(volc_areq))
+~~~
 
 ![Volcanes de Arequipa](https://user-images.githubusercontent.com/78512276/106982945-ab96b480-672a-11eb-99ee-04ae5d2ae356.png)
 
 ## Visualización  por  latitud de los volcanes de Arequipa
+~~~
 tm_shape(volc_areq)+
 
   tm_bubbles(col = "LATITUD", size = 0.5)+

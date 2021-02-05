@@ -59,7 +59,7 @@ dist_areq <- dist %>%
   filter(DEPARTAMEN == "AREQUIPA")
 ~~~
 
-## Visualización de los volcanes de Arequipa 
+## Visualización de los volcanes de Arequipa por distrito 
 Para esto utilizaremos la librería Mapview:
 ~~~
 mapview(dist_areq , zcol = "DISTRITO" , 
@@ -70,7 +70,7 @@ mapview(dist_areq , zcol = "DISTRITO" ,
 
 ~~~
 
-![Volcanes de Arequipa]()
+![Volanes de Arequipa por distrito](https://user-images.githubusercontent.com/78512423/107091386-b5262800-67cf-11eb-8853-ce25c2fc311d.png)
 
 ## Visualización  por  latitud de los volcanes de Arequipa
 ~~~

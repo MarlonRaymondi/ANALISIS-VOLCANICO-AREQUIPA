@@ -22,8 +22,9 @@ ALUMNOS:
 (https://www.geogpsperu.com/2018/05/volcanes-activos-e-inactivos-ingemmet.html "Volcanes Activos e Inactivos INGEMMET - GEOCATMIN | SHP + KMZ")
 
 ## Cargando librerías
-library(sf)
 ~~~
+library(sf)
+
 library(tidyverse)
 
 library(dplyr)

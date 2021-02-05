@@ -20,28 +20,21 @@ ALUMNOS_
 
 ## Cargando librerías
 library(sf)
-
 library(tidyverse)
-
 library(dplyr)
-
 library(mapview)
-
 library(ggplot2)
-
 library(tmap)
 
 
 ## Cargando la data 
 st_read("OTROS VOLCANES INGEMMET GEOCATMIN GEOGPSPERU.shp")
-
 volcan <- st_read("OTROS VOLCANES INGEMMET GEOCATMIN GEOGPSPERU.shp")
 
 ## Filtrando datos solo del departamento de Arequipa
 volc_areq<-volcan %>%
-
   filter(DEPARTAMEN =="AREQUIPA")
 	
-
+## Visualización de los volcanes de Arequipa 
 	
 

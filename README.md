@@ -86,7 +86,7 @@ tm_shape(dist_areq) +
   
   tm_layout(frame = T) 
  ~~~ 
-  ![altitud]
+ ![TMAP](https://user-images.githubusercontent.com/78512423/107094129-82caf980-67d4-11eb-803e-487244e1d043.png)
   
 ## Relación entre dos variables
 ~~~

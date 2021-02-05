@@ -43,4 +43,5 @@ volc_areq<-volcan %>%
   filter(DEPARTAMEN =="AREQUIPA")
 	
 ## Visualización de los volcanes de Arequipa 
-https://www.youtube.com/watch?v=nvPOUdz5PL4
+![Volcanes de Arequipa](https://user-images.githubusercontent.com/78512276/106982945-ab96b480-672a-11eb-99ee-04ae5d2ae356.png)
+

@@ -61,9 +61,15 @@ tm_shape(volc_areq)+
   
   ![altitud](https://user-images.githubusercontent.com/78512276/106985801-b43db980-672f-11eb-92d5-271e0c8f7f23.png)
 ## Relación entre dos variables
+
 ggplot(volc_areq, mapping = aes(x= ELEVACION, y= VOLUMEN, 
+
                                 color = CATEGORIA)) + geom_point() + 
+				
   geom_smooth(method = 'lm') +
+  
   ggtitle("RELACION ENTRE VOLUMEN Y ELEVACION") +
+  
   theme(plot.title = element_text(hjust = 0.5))
+  
   ![IMAGEN3](https://user-images.githubusercontent.com/78512276/106987519-43000580-6733-11eb-8880-36c6e2ba7ade.png)

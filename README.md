@@ -63,9 +63,23 @@ tm_shape(volc_areq)+
 ## Relación entre dos variables
 
 ggplot(volc_areq, mapping = aes(x= ELEVACION, y= VOLUMEN, 
+
                                 color = CATEGORIA)) + geom_point() + 
-				  geom_smooth(method = 'lm') +
-    ggtitle("RELACION ENTRE VOLUMEN Y ELEVACION") +
-    theme(plot.title = element_text(hjust = 0.5))
+				
+  geom_smooth(method = 'lm') +
+  
+  ggtitle("RELACION ENTRE VOLUMEN Y ELEVACION") +
+  
+  theme(plot.title = element_text(hjust = 0.5))
   
   ![IMAGEN3](https://user-images.githubusercontent.com/78512276/106987519-43000580-6733-11eb-8880-36c6e2ba7ade.png)
+  
+  
+  ## Relación altitud y la actividad volcánica
+  
+  ggplot(volc_areq, mapping = aes(x= CATEGORIA, y= ALTITUD, 
+                                color = CATEGORIA)) + 
+ geom_jitter() + ggtitle("RELACION DE ALTITUD Y ACTIVIDAD VOLCANICA")+
+  theme(plot.title = element_text(hjust = 0.5))
+  
+  ![IMAGEN4](https://user-images.githubusercontent.com/78512276/106988025-4e9ffc00-6734-11eb-919e-3a3fe054d78e.png)

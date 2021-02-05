@@ -64,7 +64,7 @@ tm_shape(volc_areq)+
 
 ggplot(volc_areq, mapping = aes(x= ELEVACION, y= VOLUMEN, 
 
-                                color = CATEGORIA)) + geom_point() + 
+color = CATEGORIA)) + geom_point() + 
 				
   geom_smooth(method = 'lm') +
   

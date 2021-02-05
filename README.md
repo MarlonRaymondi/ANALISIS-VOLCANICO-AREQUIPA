@@ -77,10 +77,11 @@ color = CATEGORIA)) + geom_point() +
   
   ## Relación altitud y la actividad volcánica
   
-  ggplot(volc_areq, mapping = aes(x= CATEGORIA, 
-  y= ALTITUD, 
-                                color = CATEGORIA)) + 
+  ggplot(volc_areq, mapping = aes(x= CATEGORIA,   y= ALTITUD,  
+                                    color = CATEGORIA)) + 
+				
  geom_jitter() + 
+ 
  ggtitle("RELACION DE ALTITUD Y ACTIVIDAD VOLCANICA")+
  
   theme(plot.title = element_text(hjust = 0.5))

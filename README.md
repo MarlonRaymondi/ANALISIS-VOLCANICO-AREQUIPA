@@ -2,6 +2,7 @@
 PROFESOR: ROY YALI SAMANIEGO
 
 GRUPO:8
+ALUMNOS.
 
 |             INTEGRANTES                 |   CÓDIGO   |
 |:----------------------------------------|-----------:|
